@@ -1,4 +1,4 @@
-# Web Development Final Project - *Guitarist Roadmap*
+# Web Development Final Project - *Guitar Roadmap*
 
 Submitted by: **Kaylie Chang**
 

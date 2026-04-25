@@ -1,0 +1,51 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #b7774d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.home-btn {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  cursor: pointer;
+}
+
+.home-btn:hover {
+  transform: scale(1.06);
+  opacity: 0.85;
+}
+
+.create-btn {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.create-btn:hover {
+  transform: scale(1.06);
+  opacity: 0.85;
+  background-color: rgb(195, 125, 87);
+}
