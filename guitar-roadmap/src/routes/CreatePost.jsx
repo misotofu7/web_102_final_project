@@ -9,15 +9,15 @@ function CreatePost() {
     const [post, setPost] = useState({
         title: "",
         description: "",
-        image: ""
+        image: "",
     })
 
     const handleChange = (event) => {
-        const {title, value} = event.target
+        const {name, value} = event.target
         setPost( (prev) => {
             return {
                 ...prev,
-                [title]: value,
+                [name]: value,
             }
         })
     }
@@ -27,23 +27,30 @@ function CreatePost() {
 
         await supabase
             .from('post')
-            .insert({title: post.title, description: post.description, image: post.image})
+            .insert({
+                title: post.title,
+                description: post.description,
+                image: post.image,
+                comments: [],
+                upvotes: 0
+            })
             .select()
         
-        navigate("/")
-        
         alert('Post created! XD')
+        navigate("/")
     }
 
     return (
         <div className="create">
             <div>
-                <form>
+                {/* <h2>Create Post</h2> */}
+                <form onSubmit={createPost}>
                     <label htmlFor="title">Post Title</label> <br />
                     <input
                         type="text"
                         id="title"
                         name="title"
+                        value={post.title}
                         onChange={handleChange}
                     />
                     <br/>
@@ -54,6 +61,7 @@ function CreatePost() {
                         type="text"
                         id="description"
                         name="description"
+                        value={post.description}
                         onChange={handleChange}
                     />
                     <br/>
@@ -64,6 +72,7 @@ function CreatePost() {
                         type="text"
                         id="image"
                         name="image"
+                        value={post.image}
                         onChange={handleChange}>
                     </input>
                     <br/>
@@ -72,7 +81,6 @@ function CreatePost() {
                     <input
                         type="submit"
                         value="Submit"
-                        onClick={createPost}
                     />
                 </form>
             </div>
