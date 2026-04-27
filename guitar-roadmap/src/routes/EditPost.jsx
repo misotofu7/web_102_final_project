@@ -47,7 +47,7 @@ const EditPost = () => {
             .update({ title: post.title, description: post.description, image: post.image })
             .eq('id', id)
 
-        navigate("/gallery")
+        navigate("/")
     }
 
     const deletePost = async (event) => {
@@ -59,7 +59,7 @@ const EditPost = () => {
             .delete()
             .eq('id', id)
 
-        navigate("/gallery")
+        navigate("/")
     }
         
     return (
