@@ -1,22 +1,26 @@
-// import { Link } from 'react-router-dom'
-// import more from '../assets/more.png'
-// import './PostCard.css'
+import { Link } from 'react-router'
+import more from '../assets/more.png'
+import './PostCard.css'
 
-// function PostCard(props) {
-//     return (
-//         <div className="post-card">
-//           <Link to={`/edit/${props.id}`}>
-//             <img className="moreButton" alt="edit button" src={more} />
-//           </Link>
+function PostCard(props) {
+  return (
+    <div className="post-card">
+      <Link to={`/post/${props.id}`} className="post-card-link">
+        <div className="post-container">
+          <p className="post-time">
+            {/* clean up time to not make it look ugly */}
+            {new Date(props.created_at).toLocaleString()}
+        </p>
+          <h2 className="post-title">{props.title}</h2>
+          <p className="post-upvotes">{props.upvotes} upvotes</p>
+        </div>
+      </Link>
 
-//           {/* make cards clickable to reach player details */}
-//           <Link to={`/post/${props.id}`} className="post-card-link">
-//             <h2 className="title">{props.title}</h2>
-//             <h3 className="description">{props.description}</h3>
-//             <p className="image">{props.image}</p>
-//           </Link>
-//       </div>
-//     )
-// }
+      <Link to={`/edit/${props.id}`} className="edit-link">
+        <img className="more-button" alt="edit button" src={more} />
+      </Link>
+    </div>
+  )
+}
 
-// export default PostCard
+export default PostCard
