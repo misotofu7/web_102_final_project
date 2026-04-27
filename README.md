@@ -66,7 +66,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-[![CodePath Final Project Walkthrough - WEB102 (Guitar Roadmap)](guitar-roadmap/src/assets/thumbnail.png)](https://www.youtube.com/watch?v=JuIcVinaf7s)
+[![CodePath Final Project Walkthrough - WEB102 (Guitar Roadmap)](guitar-roadmap/src/assets/thumbnail.png)](https://www.youtube.com/watch?v=lnKGb6iiIsI)
 
 <!-- Replace this with whatever GIF tool you used! -->
 Video filmed with QuickTime Player and edited with iMovie!
