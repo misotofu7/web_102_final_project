@@ -6,13 +6,19 @@ function PostCard(props) {
   return (
     <div className="post-card">
       <Link to={`/post/${props.id}`} className="post-card-link">
-        <div className="post-container">
+        <div className="upvote-display">
+          <p className="upvote-arrow">↑</p>
+          <p className="upvote-count">{props.upvotes}</p>
+          <p className="upvote-label">upvotes</p>
+        </div>
+        
+        <div className="main-post">
+          <h2 className="post-title">{props.title}</h2>
+
           <p className="post-time">
             {/* clean up time to not make it look ugly */}
             {new Date(props.created_at).toLocaleString()}
-        </p>
-          <h2 className="post-title">{props.title}</h2>
-          <p className="post-upvotes">{props.upvotes} upvotes</p>
+          </p>
         </div>
       </Link>
 

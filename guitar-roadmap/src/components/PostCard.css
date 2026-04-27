@@ -1,52 +1,92 @@
 .post-card {
-  background: white;
-  border: 1px solid #ead9cc;
-  border-radius: 14px;
-  padding: 1rem 1.25rem;
+  background: rgb(234, 194, 168);
+  border: 1px solid #eeb68b;
+  border-radius: 16px;
+  padding: 1.1rem 1.3rem;
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  color: #2f1d12;
 }
 
 .post-card-link {
   text-decoration: none;
   color: inherit;
   flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
 }
 
-.post-left {
+.upvote-display {
+  width: 82px;
+  min-width: 82px;
+  background: #ffcd94;
+  border-radius: 18px;
+  font-weight: bold;
+  padding: 0.55rem 0.4rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  justify-content: center;
 }
 
-.post-time {
+.upvote-arrow {
   margin: 0;
-  font-size: 0.9rem;
-  color: #8a7a6d;
+  font-size: 1.35rem;
+  line-height: 1;
+  font-weight: bold;
+  color: #3a2417;
+}
+
+.upvote-count {
+  margin: 0.35rem 0 0.15rem 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #2f1d12;
+}
+
+.upvote-label {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #7a6a5d;
+}
+
+.main-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.45rem;
 }
 
 .post-title {
   margin: 0;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: #2f1d12;
+  line-height: 1.2;
 }
 
-.post-upvotes {
+.post-time {
   margin: 0;
   font-size: 0.95rem;
-  color: #9b5e34;
   font-weight: 600;
+  color: #2f1d12;
 }
 
 .edit-link {
   margin-left: 1rem;
+  display: flex;
+  align-items: flex-start;
 }
 
 .more-button {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
+  opacity: 0.45;
 }
