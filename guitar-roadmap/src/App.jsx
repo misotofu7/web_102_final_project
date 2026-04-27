@@ -2,8 +2,8 @@ import { Routes, Route } from 'react-router'
 import Navbar from './components/Navbar'
 import Homepage from './routes/Homepage'
 import CreatePost from './routes/CreatePost'
-// import EditPost from './routes/EditPost'
-// import PostDetail from './routes/PostDetail'
+import EditPost from './routes/EditPost'
+import PostDetail from './routes/PostDetail'
 import './App.css'
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage /> } />
         <Route path="/create" element={<CreatePost /> } />
-        {/* <Route path="/edit/:id" element={<EditPost /> } />
-        <Route path="/post-details/:id" element={<PostDetail /> } /> */}
+        <Route path="/edit/:id" element={<EditPost /> } />
+        <Route path="/post/:id" element={<PostDetail /> } />
       </Routes>
     </div>
   )

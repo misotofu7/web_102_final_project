@@ -1,12 +1,12 @@
 .post-detail {
-  margin-left: 220px;
   min-height: 100vh;
-  background: linear-gradient(180deg, #d7a171 0%, #bf7330 100%);
+  background-color: #cfa180;
   padding: 3rem 2rem;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  padding-top: 90px;
 }
 
 .post-detail-card {

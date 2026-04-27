@@ -31,7 +31,7 @@ function Homepage() {
     })
 
     const filteredPosts = posts.filter((post) => {
-        post.title.toLowerCase().includes(searchTerm.toLowerCase())
+        return post.title.toLowerCase().includes(searchTerm.toLowerCase())
     })
 
     return (
@@ -46,6 +46,8 @@ function Homepage() {
                             className="search-input"
                             type="text"
                             placeholder="Search posts by title..."
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
                         />
 
                         {/* filters here */}
@@ -62,8 +64,8 @@ function Homepage() {
 
                 {/* list posts all here */}
                 <div className="posts-list">
-                    {posts.length > 0 ? (
-                        posts.map((post) => (
+                    {sortedPosts.length > 0 ? (
+                        sortedPosts.map((post) => (
                             <PostCard
                                 key={post.id}
                                 id={post.id}

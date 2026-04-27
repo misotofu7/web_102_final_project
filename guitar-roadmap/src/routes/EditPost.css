@@ -1,10 +1,10 @@
 .edit {
-  margin-left: 220px;
   min-height: 100vh;
-  background: linear-gradient(180deg, #df954c 0%, #bf8438 100%);
+  background-color: #cfa180;
   padding: 2.5rem 2rem 4rem;
   box-sizing: border-box;
   text-align: center;
+  padding-top: 90px;
 }
 
 .edit h1 {
