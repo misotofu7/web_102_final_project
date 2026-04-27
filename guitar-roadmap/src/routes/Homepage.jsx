@@ -22,16 +22,16 @@ function Homepage() {
         fetchPosts()
     }, [])
 
-    const sortedPosts = [...posts].sort((a, b) => {
+    const filteredPosts = posts.filter((post) => {
+        return post.title.toLowerCase().includes(searchTerm.toLowerCase())
+    })
+
+    const sortedPosts = [...filteredPosts].sort((a, b) => {
         if (sortBy === 'upvotes') {
             return b.upvotes - a.upvotes
         }
 
         return new Date(b.created_at) - new Date(a.created_at)
-    })
-
-    const filteredPosts = posts.filter((post) => {
-        return post.title.toLowerCase().includes(searchTerm.toLowerCase())
     })
 
     return (

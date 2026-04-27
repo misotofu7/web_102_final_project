@@ -45,18 +45,19 @@ function CreatePost() {
             <div>
                 {/* <h2>Create Post</h2> */}
                 <form onSubmit={createPost}>
-                    <label htmlFor="title">Post Title</label> <br />
+                    <label htmlFor="title">Post Title (**required**)</label> <br />
                     <input
                         type="text"
                         id="title"
                         name="title"
                         value={post.title}
                         onChange={handleChange}
+                        required
                     />
                     <br/>
                     <br/>
 
-                    <label htmlFor="description">Description</label><br />
+                    <label htmlFor="description">Description (optional)</label><br />
                     <input
                         type="text"
                         id="description"
@@ -67,7 +68,7 @@ function CreatePost() {
                     <br/>
                     <br/>
 
-                    <label htmlFor="image">Image URL</label><br />
+                    <label htmlFor="image">Image URL (optional)</label><br />
                     <input
                         type="text"
                         id="image"

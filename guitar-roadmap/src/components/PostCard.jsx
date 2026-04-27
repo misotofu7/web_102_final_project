@@ -1,5 +1,4 @@
 import { Link } from 'react-router'
-import more from '../assets/more.png'
 import './PostCard.css'
 
 function PostCard(props) {
@@ -23,7 +22,8 @@ function PostCard(props) {
       </Link>
 
       <Link to={`/edit/${props.id}`} className="edit-link">
-        <img className="more-button" alt="edit button" src={more} />
+        {/* <img className="more-button" alt="edit button" src={more} /> */}
+        Edit Post
       </Link>
     </div>
   )

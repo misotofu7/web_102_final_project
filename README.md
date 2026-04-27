@@ -2,20 +2,20 @@
 
 Submitted by: **Kaylie Chang**
 
-This web app: **Welcome to the guitarist hub where people can keep track of their guitar-playing progress and help others succeed in their journey!**
+This web app: **Welcome to the guitar roadmap where people can keep track of their guitar-playing progress and help others succeed in their journey through posts and encouragement!**
 
-Time spent: **X** hours spent in total
+Time spent: **4** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] **Web app includes a create form that allows the user to create posts**
+- [x] **Web app includes a create form that allows the user to create posts**
   - Form requires users to add a post title
   - Forms should have the *option* for users to add: 
     - additional textual content
     - an image added as an external image URL
-- [ ] **Web app includes a home feed displaying previously created posts**
+- [x] **Web app includes a home feed displaying previously created posts**
   - Web app must include home feed displaying previously created posts
   - By default, each post on the posts feed should show only the post's:
     - creation time
@@ -36,8 +36,7 @@ The following **required** functionality is completed:
   - Each post includes an upvote button on the post page. 
     - Each click increases the post's upvotes count by one
     - Users can upvote any post any number of times
-
-- [ ] **A post that a user previously created can be edited or deleted from its post pages**
+- [x] **A post that a user previously created can be edited or deleted from its post pages**
   - After a user creates a new post, they can go back and edit the post
   - A previously created post can be deleted from its post page
 
@@ -67,7 +66,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+[![CodePath Final Project Walkthrough - WEB102 (Guitar Roadmap)](guitar-roadmap/src/assets/thumbnail.png)](https://www.youtube.com/watch?v=JuIcVinaf7s)
 
 <!-- Replace this with whatever GIF tool you used! -->
 Video filmed with QuickTime Player and edited with iMovie!
@@ -80,6 +79,8 @@ Video filmed with QuickTime Player and edited with iMovie!
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+I got too enthusiastic/dreamy about what I could make and started thinking about building all the features I wanted to include, which distracted me from coding effectively. I kept jumping from file to file, which slowed down my progress a lot. As such, it was difficult to keep my pages looking consistent and my files organized while working.
 
 ## License
 
