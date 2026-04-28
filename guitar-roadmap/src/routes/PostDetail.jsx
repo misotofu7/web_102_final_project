@@ -95,13 +95,11 @@ function PostDetail() {
                 </div>
 
                 <div className="post-content">
-                    <div className="upvote-box">
-                        <p className="upvote-arrow">↑</p>
-                        <p className="upvote-count">{post.upvotes ?? 0}</p>
-                        <button className="upvote-btn" onClick={handleUpvote}>
-                            Upvote
-                        </button>
-                    </div>
+                    <button className="upvote-box" onClick={handleUpvote}>
+                        <span className="upvote-arrow">↑</span>
+                        <span className="upvote-count">{post.upvotes ?? 0}</span>
+                        <span className="upvote-label">Upvote</span>
+                    </button>
 
                     <div className="post-main">
                         <h1 className="post-title">{post.title}</h1>
