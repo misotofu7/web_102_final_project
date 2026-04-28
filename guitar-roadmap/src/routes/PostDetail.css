@@ -1,64 +1,217 @@
 .post-detail {
   min-height: 100vh;
   background-color: #cfa180;
-  padding: 3rem 2rem;
+  padding: 2rem;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 90px;
+  padding-top: 95px;
 }
 
 .post-detail-card {
   width: 100%;
-  max-width: 900px;
+  max-width: 920px;
+  margin: 0 auto;
   background: rgba(255, 255, 255, 0.16);
-  border-radius: 28px;
-  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  padding: 1.6rem;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
-  text-align: center;
   color: white;
 }
 
-.post-detail-card h1 {
-  font-size: 4rem;
-  margin: 0 0 2.5rem;
-}
-
-.post-detail-card h2 {
-  font-size: 2rem;
-  margin: 0 0 1.5rem;
-}
-
-.post-detail-card p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.extra-info {
-  opacity: 0.95;
-}
-
-.buttons {
-  margin-top: 2rem;
+.top-btns {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.3rem;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #9b5e34;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.action-btns {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.edit-post-btn,
+.delete-btn {
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  color: #111;
+  font-weight: 700;
+  font-size: 0.88rem;
 }
 
 .edit-post-btn {
-  display: inline-block;
-  padding: 0.95rem 1.4rem;
-  border-radius: 18px;
-  background: rgb(255, 255, 255);
-  color: #111;
+  border: 1px solid #d8c2b2;
+  color: #9b5e34;
   text-decoration: none;
-  font-weight: 700;
+}
+
+.delete-btn {
+  border: 1px solid #efb2a9;
+  color: #d14b3f;
 }
 
 .edit-post-btn:hover {
   background: rgb(176, 176, 176);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.post-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.upvote-box {
+  width: 84px;
+  min-width: 84px;
+  background: #f8f3ee;
+  border-radius: 12px;
+  padding: 0.8rem 0.45rem;
+  text-align: center;
+}
+
+.upvote-arrow {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #2f1d12;
+}
+
+.upvote-count {
+  margin: 0.35rem 0 0.2rem 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #2f1d12;
+}
+
+.upvote-btn {
+  margin-top: 0.45rem;
+  border: none;
+  background: transparent;
+  color: #9b5e34;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.post-main {
+  flex: 1;
+}
+
+.post-title {
+  margin: 0 0 0.45rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2f1d12;
+  line-height: 1.2;
+}
+
+.post-time {
+  margin: 0 0 0.9rem 0;
+  font-size: 0.92rem;
+  color: #7a6a5d;
+}
+
+.post-description {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2f1d12;
+}
+
+.post-image {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  border-radius: 12px;
+  margin-top: 0.5rem;
+}
+
+.comments-section {
+  border-top: 1px solid #ead9cc;
+  padding-top: 1.4rem;
+}
+
+.comments-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: #2f1d12;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.comment-item {
+  background: #faf7f3;
+  border: 1px solid #ead9cc;
+  border-radius: 12px;
+  padding: 0.8rem 0.95rem;
+  font-size: 0.95rem;
+  color: #2f1d12;
+}
+
+.no-comments {
+  margin-bottom: 1rem;
+  color: #7a6a5d;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.comment-input {
+  width: 100%;
+  min-height: 140px;
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #d8c2b2;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  resize: vertical;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.comment-input:focus {
+  border-color: #b7774d;
+}
+
+.comment-btn {
+  border: none;
+  background: #b7774d;
+  color: white;
+  padding: 0.9rem 1.05rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 1rem;
+}
+
+.comment-btn:hover {
+  background: rgb(195, 125, 87);
   transition: transform 0.3s ease;
   cursor: pointer;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);

@@ -22,7 +22,7 @@ function CreatePost() {
         })
     }
 
-    const createPost = async (event) => {
+    const handleCreatePost = async (event) => {
         event.preventDefault()
 
         await supabase
@@ -44,7 +44,7 @@ function CreatePost() {
         <div className="create">
             <div>
                 {/* <h2>Create Post</h2> */}
-                <form onSubmit={createPost}>
+                <form onSubmit={handleCreatePost}>
                     <label htmlFor="title">Post Title (**required**)</label> <br />
                     <input
                         type="text"

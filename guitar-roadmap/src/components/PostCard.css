@@ -78,11 +78,23 @@
   color: #2f1d12;
 }
 
-.edit-link {
-  margin-left: 1rem;
-  display: flex;
-  align-items: flex-start;
+.edit-btn {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: #cfa180;
+  border: 2px solid white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
 }
+
+.edit-btn:hover {
+  transform: scale(1.06);
+  opacity: 0.85;
+  background-color: rgb(195, 125, 87);
+}
+
 
 .more-button {
   width: 20px;

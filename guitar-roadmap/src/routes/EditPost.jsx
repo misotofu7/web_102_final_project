@@ -39,7 +39,7 @@ const EditPost = () => {
         })
     }
 
-    const updatePost = async (event) => {
+    const handleUpdatePost = async (event) => {
         // prevent page from reloading whenever form is submitted
         event.preventDefault()
         await supabase
@@ -50,7 +50,7 @@ const EditPost = () => {
         navigate("/")
     }
 
-    const deletePost = async (event) => {
+    const handleDeletePost = async (event) => {
         // prevent page from reloading whenever form is submitted
         event.preventDefault()
 
@@ -103,12 +103,12 @@ const EditPost = () => {
                 <input
                     type="submit"
                     value="Submit"
-                    onClick={updatePost}
+                    onClick={handleUpdatePost}
                 />
 
                 <button
                     className="deleteButton"
-                    onClick={deletePost}
+                    onClick={handleDeletePost}
                 >
                     Delete
                 </button>

@@ -21,8 +21,7 @@ function PostCard(props) {
         </div>
       </Link>
 
-      <Link to={`/edit/${props.id}`} className="edit-link">
-        {/* <img className="more-button" alt="edit button" src={more} /> */}
+      <Link to={`/edit/${props.id}`} className="edit-btn">
         Edit Post
       </Link>
     </div>
