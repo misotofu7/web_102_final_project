@@ -4,7 +4,7 @@ Submitted by: **Kaylie Chang**
 
 This web app: **Welcome to the guitar roadmap where people can keep track of their guitar-playing progress and help others succeed in their journey through posts and encouragement!**
 
-Time spent: **4** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
@@ -27,7 +27,7 @@ The following **required** functionality is completed:
     -  creation time
     -  upvotes count
   - Users can search for posts by title
-- [ ] **Users can interact with each post in different ways**
+- [x] **Users can interact with each post in different ways**
   - The app includes a separate post page for each created post when clicked, where any additional information is shown, including:
     - content
     - image

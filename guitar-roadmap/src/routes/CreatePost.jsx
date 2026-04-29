@@ -41,15 +41,21 @@ function CreatePost() {
     }
 
     return (
-        <div className="create">
-            <div>
-                {/* <h2>Create Post</h2> */}
-                <form onSubmit={handleCreatePost}>
-                    <label htmlFor="title">Post Title (**required**)</label> <br />
+        <div className="create-page">
+            <div className="create-card">
+                <h1 className="create-title">Create Post</h1>
+
+                <form onSubmit={handleCreatePost} className="create-form">
+                    <label htmlFor="title">
+                        Post Title
+                        <span> (**required**)</span>
+                    </label>
+                    <br />
                     <input
                         type="text"
                         id="title"
                         name="title"
+                        placeholder="Enter post title..."
                         value={post.title}
                         onChange={handleChange}
                         required
@@ -57,32 +63,43 @@ function CreatePost() {
                     <br/>
                     <br/>
 
-                    <label htmlFor="description">Description (optional)</label><br />
+                    <label htmlFor="description">
+                        Description
+                        <span> (optional)</span>
+                    </label>
+                    <br />
                     <input
                         type="text"
                         id="description"
                         name="description"
+                        placeholder="Write your post content here"
                         value={post.description}
                         onChange={handleChange}
                     />
                     <br/>
                     <br/>
 
-                    <label htmlFor="image">Image URL (optional)</label><br />
+                    <label htmlFor="image">
+                        Image URL
+                        <span> (optional)</span>
+                    </label>
+                    <br />
                     <input
                         type="text"
                         id="image"
                         name="image"
+                        placeholder="https://example.com/image.jpg"
                         value={post.image}
                         onChange={handleChange}>
                     </input>
                     <br/>
                     <br/>
 
-                    <input
-                        type="submit"
-                        value="Submit"
-                    />
+                    <div className="create-btn-row">
+                        <button type="submit" className="create-btn">
+                            Submit Post
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>

@@ -63,56 +63,59 @@ const EditPost = () => {
     }
         
     return (
-        <div className="edit">
-            <h1>Edit Post</h1>
+        <div className="edit-page">
+            <div className="edit-card">
+                <h1 className="edit-title">Edit Post</h1>
 
-            <form>
-                <label htmlFor="title">Title of Post</label> <br />
-                <input
-                    type="text"
-                    id="title"
-                    name="title"
-                    value={post.title}
-                    onChange={handleChange}
-                />
-                <br/>
-                <br/>
+                <form onSubmit={handleUpdatePost} className="edit-form">
+                    <label htmlFor="title">Title of Post</label>
+                    <br />
+                    <input
+                        type="text"
+                        id="title"
+                        name="title"
+                        value={post.title}
+                        onChange={handleChange}
+                    />
+                    <br/>
+                    <br/>
 
-                <label htmlFor="description">Description</label><br />
-                <input
-                    type="text"
-                    id="description"
-                    name="description"
-                    value={post.description}
-                    onChange={handleChange}
-                />
-                <br/>
-                <br/>
+                    <label htmlFor="description">Description</label><br />
+                    <input
+                        type="text"
+                        id="description"
+                        name="description"
+                        value={post.description}
+                        onChange={handleChange}
+                    />
+                    <br/>
+                    <br/>
 
-                <label htmlFor="image">Image URL</label><br />
-                <input
-                    type="text"
-                    id="image"
-                    name="image"
-                    value={post.image}
-                    onChange={handleChange}
-                />
-                <br/>
-                <br/>
+                    <label htmlFor="image">Image URL</label><br />
+                    <input
+                        type="text"
+                        id="image"
+                        name="image"
+                        value={post.image}
+                        onChange={handleChange}
+                    />
+                    <br/>
+                    <br/>
+                    
+                    <div className="edit-btn-row">
+                        <button className="cancel-btn" onClick={() => navigate("/")}>
+                            X Cancel
+                        </button>
+                        <button type="submit" className="save-btn">
+                            Save Post
+                        </button>
 
-                <input
-                    type="submit"
-                    value="Submit"
-                    onClick={handleUpdatePost}
-                />
-
-                <button
-                    className="deleteButton"
-                    onClick={handleDeletePost}
-                >
-                    Delete
-                </button>
-            </form>
+                        <button className="delete-btn" onClick={handleDeletePost}>
+                            Delete Post
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     )
 }
