@@ -1,0 +1,40 @@
+.upvote-arrow,
+.upvote-count,
+.upvote-label {
+  display: block;
+}
+
+.upvote-box {
+  width: 84px;
+  min-width: 84px;
+  background: #f8f3ee;
+  border: 2px solid rgb(180, 137, 86);
+  border-radius: 12px;
+  padding: 0.8rem 0.45rem;
+  text-align: center;
+}
+
+.upvote-arrow {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #2f1d12;
+}
+
+.upvote-count {
+  margin: 0.35rem 0 0.2rem 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #2f1d12;
+}
+
+.upvote-label {
+  margin-top: 0.45rem;
+  border: none;
+  background: transparent;
+  color: #9b5e34;
+  font-size: 0.8rem;
+  font-weight: 600;
+}

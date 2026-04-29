@@ -34,6 +34,8 @@ function Homepage() {
         return new Date(b.created_at) - new Date(a.created_at)
     })
 
+    console.log("Homepage upvotes: ", posts)
+
     return (
         <div className="homepage">
             <div className="homepage-content">

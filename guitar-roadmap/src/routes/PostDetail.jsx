@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate, Link } from 'react-router'
 import { supabase } from '../client'
+import UpvoteBox from '../components/UpvoteBox'
 import './PostDetail.css'
 
 function PostDetail() {
@@ -95,11 +96,7 @@ function PostDetail() {
                 </div>
 
                 <div className="post-content">
-                    <button className="upvote-box" onClick={handleUpvote}>
-                        <span className="upvote-arrow">↑</span>
-                        <span className="upvote-count">{post.upvotes ?? 0}</span>
-                        <span className="upvote-label">Upvote</span>
-                    </button>
+                    <UpvoteBox upvotes={post.upvotes} handleUpvote={handleUpvote} />
 
                     <div className="post-main">
                         <h1 className="post-title">{post.title}</h1>

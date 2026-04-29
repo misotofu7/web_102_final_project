@@ -1,15 +1,15 @@
 import { Link } from 'react-router'
+import UpvoteBox from './UpvoteBox'
 import './PostCard.css'
 
 function PostCard(props) {
   return (
     <div className="post-card">
       <Link to={`/post/${props.id}`} className="post-card-link">
-        <div className="upvote-display">
-          <p className="upvote-arrow">↑</p>
-          <p className="upvote-count">{props.upvotes}</p>
-          <p className="upvote-label">upvotes</p>
-        </div>
+        <UpvoteBox
+          upvotes={props.upvotes}
+          handleUpvote={(e) => e.preventDefault()}
+        />
         
         <div className="main-post">
           <h2 className="post-title">{props.title}</h2>
