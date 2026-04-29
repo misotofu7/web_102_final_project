@@ -68,7 +68,7 @@ const EditPost = () => {
                 <h1 className="edit-title">Edit Post</h1>
 
                 <form onSubmit={handleUpdatePost} className="edit-form">
-                    <label htmlFor="title">Title of Post</label>
+                    <label htmlFor="title">Post Title</label>
                     <br />
                     <input
                         type="text"
@@ -76,6 +76,7 @@ const EditPost = () => {
                         name="title"
                         value={post.title}
                         onChange={handleChange}
+                        required
                     />
                     <br/>
                     <br/>
@@ -101,7 +102,7 @@ const EditPost = () => {
                     />
                     <br/>
                     <br/>
-                    
+
                     <div className="edit-btn-row">
                         <button className="cancel-btn" onClick={() => navigate("/")}>
                             X Cancel
