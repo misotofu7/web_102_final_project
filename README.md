@@ -60,13 +60,13 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+* [x] Added a back button through either "<-- Back to Home" or "X Cancel" buttons.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-[![CodePath Final Project Walkthrough - WEB102 (Guitar Roadmap)](guitar-roadmap/src/assets/thumbnail.png)](https://www.youtube.com/watch?v=lnKGb6iiIsI)
+[![CodePath Final Project Walkthrough - WEB102 (Guitar Roadmap)](guitar-roadmap/src/assets/thumbnail2.png)](https://www.youtube.com/watch?v=XoIVoLAl01s)
 
 <!-- Replace this with whatever GIF tool you used! -->
 Video filmed with QuickTime Player and edited with iMovie!
@@ -81,6 +81,8 @@ Video filmed with QuickTime Player and edited with iMovie!
 Describe any challenges encountered while building the app.
 
 I got too enthusiastic/dreamy about what I could make and started thinking about building all the features I wanted to include, which distracted me from coding effectively. I kept jumping from file to file, which slowed down my progress a lot. As such, it was difficult to keep my pages looking consistent and my files organized while working.
+
+Another challenge I faced was making sure that my website had enough color contrast. I focused on using warm colors primarily (to match the color of a guitar) but I ended up making the colors too similar.
 
 ## License
 
