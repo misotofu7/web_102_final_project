@@ -11,11 +11,11 @@ function Navbar() {
 
             <nav className="nav-right">
                 {/* right side navigation buttons */}
+                <Link to="/roadmap" className="roadmap-btn">Roadmap</Link>
                 <Link to="/create" className="create-btn">+ Create Post</Link>
 
                 {/* extra features to add if there's time */}
                 {/* <Link to="/login" className="nav-links">Login</Link>
-                <Link to="/roadmap" className="nav-links">Roadmap</Link>
                 <Link to="/tutorials" className="nav-links">Tutorials</Link> */}
             </nav>
         </nav>

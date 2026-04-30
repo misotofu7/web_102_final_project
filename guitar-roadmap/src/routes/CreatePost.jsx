@@ -36,7 +36,7 @@ function CreatePost() {
             })
             .select()
         
-        alert('Post created! XD')
+        // alert('Post created! XD')
         navigate("/")
     }
 
